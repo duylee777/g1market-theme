@@ -12,3 +12,4 @@ btnShow.addEventListener('click', function() {
     mobileBox.classList.remove('mobile-box--close')
     mobileBox.classList.add('mobile-box--show')
 })
+

@@ -203,7 +203,7 @@ ul {
     height: 3px;
     background-image: linear-gradient(to right, var(--malibu), var(--caribbean-green));
 }
-.section-content {
+.s-main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
     gap: 20px;
@@ -288,7 +288,7 @@ ul {
 }
 
 /* css blog */
-.section-content--2col {
+.s-main--2col {
     grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
 }
 .section-header__title--gradient {
@@ -531,6 +531,49 @@ footer {
 }
 .breadcrumb-item a:hover {
     color: var(--caribbean-green);
+}
+/* css contact */
+.contact-form {
+    padding: 1rem;
+    box-shadow: -2px 2px 5px var(--caribbean-green);
+    border-radius: 0.5rem;
+}
+.contact-form__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+.contact-form__item label {
+    font-weight: var(--semibold);
+}
+.contact-form__item input,
+.contact-form__item textarea {
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    border-radius: 0.25rem;
+    box-shadow: -2px 2px 5px var(--caribbean-green);
+}
+.contact-form__item input:focus,
+.contact-form__item textarea:focus {
+    outline-color: var(--caribbean-green);
+}
+.contact-form__btn {
+    text-align: right;
+    right: 0;
+}
+.contact-form__btn button {
+    padding: 1rem 3rem;
+    color: var(--white);
+    background-color: var(--caribbean-green);
+    border-radius: 0.25rem;
+    font-weight: var(--semibold);
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: -2px 2px 5px var(--gray);
+}
+.contact-form__btn button:hover {
+    background-color: var(--keppel);
 }
 /* css mobile */
 .mobile {

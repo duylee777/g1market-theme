@@ -5,6 +5,29 @@
     -webkit-text-fill-color: transparent;
 }
 
+#paginate {
+    list-style-type: none;
+    margin: 1rem 0;
+}
+#paginate li {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-weight: var(--semibold);
+    display: inline-block;
+    border: 1px solid var(--caribbean-green);
+    color: var(--caribbean-green);
+    margin-right: 0.5rem;
+}
+#paginate li:hover {
+    background-color: var(--caribbean-green);
+    color: var(--white);
+}
+#paginate .page--active {
+    background-color: var(--caribbean-green);
+    color: var(--white);
+}
+
 .page-list {
     list-style-type: none;
     margin: 1rem 0;
@@ -35,5 +58,18 @@
     text-align: center;
 }
 .a-header__title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+}
+
+.s-header {
+    font-size: 2rem;
+    background: linear-gradient(to right, var(--caribbean-green), var(--malibu));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.s-header--center {
+    text-align: center;
+}
+.s-header__title {
+    margin: 1rem 0;
 }

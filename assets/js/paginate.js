@@ -2,10 +2,16 @@
 let thisPage = 1; 
 
 //số phần tử trên 1 trang
-let limit = 6;
+let limit = 2;
 
 //danh sách tất cả phần tử
+function getList(className) {
+    let list = document.querySelectorAll(className);
+    return list;
+}
+// let list = getList('.s-main .card')
 let list = document.querySelectorAll('.section-content .posts');
+
 
 function loadItem() {
     //vị trí lấy đầu tiên
