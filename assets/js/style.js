@@ -1,15 +1,15 @@
-var btnShow = document.getElementsByClassName('mobile__bars')[0];
-var btnClose = document.getElementsByClassName('mobile__btn-close')[0];
+var btnShow = document.getElementById('showMenuMobileBtn');
+var btnClose = document.getElementById('closeMenuMobileBtn');
 
-var mobileBox = document.getElementsByClassName('mobile-box')[0];
+var mobileWrap = document.getElementsByClassName('mobile-wrap')[0];
 
 btnClose.addEventListener('click', function() {
-    mobileBox.classList.remove('mobile-box--show')
-    mobileBox.classList.add('mobile-box--close');
+    mobileWrap.classList.remove('mobile-wrap--show')
+    mobileWrap.classList.add('mobile-wrap--close');
 })
 
 btnShow.addEventListener('click', function() {
-    mobileBox.classList.remove('mobile-box--close')
-    mobileBox.classList.add('mobile-box--show')
+    mobileWrap.classList.remove('mobile-wrap--close');
+    mobileWrap.classList.add('mobile-wrap--show');
 })
 

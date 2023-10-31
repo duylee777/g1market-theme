@@ -6,330 +6,132 @@
     <link rel="shortcut icon" href="assets/images/logo/favicon.ico" type="image/x-icon">
     <title>G1MARKET</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css"
+    />
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link rel="stylesheet" href="assets/css/update.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="head-top">
-                <a href="#" class="brand">
-                    <img src="assets/images/logo/g1market-logo.png" alt="G1MARKET Logo" class="brand__logo">
-                </a>
-                <nav>
-                    <ul class="nav">
-                        <li><a href="index.html" class="active">Trang chủ</a></li>
-                        <li><a href="posts.html">Bài viết</a></li>
-                        <li><a href="contact.html">Liên hệ</a></li>
-                        <li><a href="pay.html">Thanh toán</a></li>
-                    </ul>
-                </nav>
-                <div class="mobile">
-                    <button class="mobile__bars"><i class="fa-solid fa-bars"></i></button>
+    <header class="container">
+        <nav class="navbar">
+            <a href="#" class="brand">
+                <img src="assets/images/logo/g1market-logo.png" alt="G1MARKET Logo" class="brand__logo">
+            </a>
+            <ul class="menu">
+                <li><a href="index.html" class="active">Trang chủ</a></li>
+                <li><a href="product-list.html">Sản phẩm</a></li>
+                <li><a href="posts.html">Bài viết</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="pay.html">Thanh toán</a></li>
+            </ul>
+            <div class="action">
+                <div class="languages">
+                    <a href=""><span class="fi fi-vn"></span></a>
+                    <a href=""><span class="fi fi-gb"></span></a>
                 </div>
-                <div class="shopping">
-                    <a href="" class="shopping__cart"><i class="fa-solid fa-bag-shopping"></i></a>
-                    <span>x1</span>
+                <div class="cart">
+                    <a href="" id="btnCart"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <span class="cart__quantity">x1</span>
                 </div>
+                <button id="showMenuMobileBtn"><i class="fa-solid fa-bars"></i></button>
             </div>
-            <div class="mobile-box">
-                <ul class="mobile-nav">
-                    <li><a href="index.html" class="mobile--active">Trang chủ</a></li>
-                    <li><a href="posts.html">Bài viết</a></li>
-                    <li><a href="contact.html">Liên hệ</a></li>
-                    <li><a href="pay.html">Thanh toán</a></li>
-                </ul>
-                <button class="mobile__btn-close"><i class="fa-solid fa-xmark"></i></button>
-            </div>
-            <div class="head-mid">
-                <div class="banner">
-                    <div class="banner__item">
-                        <img src="assets/images/banner/market-banner2.png" alt="G1MARKET BANNER 2">
-                    </div>
-                    <div class="banner__item">
-                        <img src="assets/images/banner/market-banner1.png" alt="G1MARKET BANNER 1">
-                    </div>
-                </div>
-            </div>
-            
+        </nav>
+        <div class="mobile-wrap">
+            <ul class="mobile-menu">
+                <li><a href="index.html" class="mobile--active">Trang chủ</a></li>
+                <li><a href="product-list.html">Sản phẩm</a></li>
+                <li><a href="posts.html">Bài viết</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="pay.html">Thanh toán</a></li>
+            </ul>
+            <button id="closeMenuMobileBtn"><i class="fa-solid fa-xmark"></i></button>
         </div>
+        <section class="banner">
+            <div class="banner__item">
+                <img src="assets/images/banner/market-banner2.png" alt="G1MARKET BANNER 2">
+            </div>
+            <div class="banner__item">
+                <img src="assets/images/banner/market-banner1.png" alt="G1MARKET BANNER 1">
+            </div>
+        </section>
     </header>
-    <main>
-        <section class="container">
-            <div class="filter">
-                <div class="select-box">
-                    <select name="" id="">
-                        <option value="" selected>-- Chọn ngành nghề --</option>
-                        <option value="">Du lịch</option>
-                        <option value="">Ẩm thực</option>
-                        <option value="">Thời trang</option>
-                        <option value="">Công nghệ</option>
-                        <option value="">Mỹ phẩm</option>
-                    </select>
-                </div>
-                <div class="select-box">
-                    <select name="" id="">
-                        <option value="" selected>-- Chọn mục đích --</option>
-                        <option value="">Blog</option>
-                        <option value="">Tin tức</option>
-                        <option value="">Bán hàng</option>
-                        <option value="">Giới thiệu / Portfolio</option>
-                        <option value="">Đặt hàng / Landing Page</option>
-                    </select>
-                </div>
-                <div class="search-box">
-                    <input type="text" placeholder="Tìm kiếm ...">
-                </div>
-                <button type="submit" class="filter__btn">
-                    Tìm kiếm <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
+    <main class="container">
+        <section class="filter">
+            <div class="select-box">
+                <select name="" id="">
+                    <option value="" selected>-- Chọn ngành nghề --</option>
+                    <option value="">Du lịch</option>
+                    <option value="">Ẩm thực</option>
+                    <option value="">Thời trang</option>
+                    <option value="">Công nghệ</option>
+                    <option value="">Mỹ phẩm</option>
+                </select>
             </div>
+            <div class="select-box">
+                <select name="" id="">
+                    <option value="" selected>-- Chọn mục đích --</option>
+                    <option value="">Blog</option>
+                    <option value="">Tin tức</option>
+                    <option value="">Bán hàng</option>
+                    <option value="">Giới thiệu / Portfolio</option>
+                    <option value="">Đặt hàng / Landing Page</option>
+                </select>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm ...">
+            </div>
+            <button type="submit" class="filter__btn">
+                Tìm kiếm <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
         </section>
-        <section>
-            <div class="container section">
-                <div class="section-header">
-                    <h3 class="section-header__title">Template / Bản mẫu</h3>
-                </div>
-                <div class="s-main">
-                    <div class="card">
-                        <div class="card__thumnail">
-                            <img src="assets/images/products/fruits.jpg" alt="">
-                        </div>
-                        <div class="card-info">
-                            <div class="tags">
-                                <span class="tag">Tin tức</span>
-                                <span class="tag">Đặt hàng / Landing Page</span>
-                            </div>
-                            <span class="card__price">1.000.000 VND</span>
-                            <h4 class="card-info__title">Template website bán hoa quả sạch oganic</h4>
-                        </div>
-                        <a href="#" class="card__link"></a>
+        <section class="home-template">
+            <div class="home-s-header home-s-header__line home-s-header__line--malibu">
+                <h3 class="home-s-header__title home-s-header__title--bg-malibu">Template / Bản mẫu</h3>
+            </div>
+            <div class="home-s-main home-s-main--4col">
+                <div class="home-card home-card__shadow--malibu">
+                    <div class="home-card__thumnail">
+                        <img src="assets/images/products/fruits.jpg" alt="">
                     </div>
-                    <div class="card">
-                        <div class="card__thumnail">
-                            <img src="assets/images/products/fruits.jpg" alt="">
+                    <div class="home-card-wrap">
+                        <div class="tags">
+                            <span class="tag">Tin tức</span>
+                            <span class="tag">Đặt hàng / Landing Page</span>
                         </div>
-                        <div class="card-info">
-                            <div class="tags">
-                                <span class="tag">Tin tức</span>
-                                <span class="tag">Đặt hàng / Landing Page</span>
-                            </div>
-                            <span class="card__price">1.000.000 VND</span>
-                            <h4 class="card-info__title">Template website bán hoa quả sạch oganic</h4>
-                        </div>
-                        <a href="#" class="card__link"></a>
+                        <span class="home-card__price home-card__price--azure">1.000.000 VND</span>
+                        <h4 class="home-card__title home-card__title--malibu">Template website bán hoa quả sạch oganic</h4>
                     </div>
-                    <div class="card">
-                        <div class="card__thumnail">
-                            <img src="assets/images/products/fruits.jpg" alt="">
-                        </div>
-                        <div class="card-info">
-                            <div class="tags">
-                                <span class="tag">Tin tức</span>
-                                <span class="tag">Đặt hàng / Landing Page</span>
-                            </div>
-                            <span class="card__price">1.000.000 VND</span>
-                            <h4 class="card-info__title">Template website bán hoa quả sạch oganic</h4>
-                        </div>
-                        <a href="#" class="card__link"></a>
-                    </div>
-                    <div class="card">
-                        <div class="card__thumnail">
-                            <img src="assets/images/products/fruits.jpg" alt="">
-                        </div>
-                        <div class="card-info">
-                            <div class="tags">
-                                <span class="tag">Tin tức</span>
-                                <span class="tag">Đặt hàng / Landing Page</span>
-                            </div>
-                            <span class="card__price">1.000.000 VND</span>
-                            <h4 class="card-info__title">Template website bán hoa quả sạch oganic</h4>
-                        </div>
-                        <a href="#" class="card__link"></a>
-                    </div>
-                    <div class="card">
-                        <div class="card__thumnail">
-                            <img src="assets/images/products/fruits.jpg" alt="">
-                        </div>
-                        <div class="card-info">
-                            <div class="tags">
-                                <span class="tag">Tin tức</span>
-                                <span class="tag">Đặt hàng / Landing Page</span>
-                            </div>
-                            <span class="card__price">1.000.000 VND</span>
-                            <h4 class="card-info__title">Template website bán hoa quả sạch oganic</h4>
-                        </div>
-                        <a href="#" class="card__link"></a>
-                    </div>
-                    <div class="card">
-                        <div class="card__thumnail">
-                            <img src="assets/images/products/fruits.jpg" alt="">
-                        </div>
-                        <div class="card-info">
-                            <div class="tags">
-                                <span class="tag">Tin tức</span>
-                                <span class="tag">Đặt hàng / Landing Page</span>
-                            </div>
-                            <span class="card__price">1.000.000 VND</span>
-                            <h4 class="card-info__title">Template website bán hoa quả sạch oganic</h4>
-                        </div>
-                        <a href="#" class="card__link"></a>
-                    </div>
-                    <div class="card">
-                        <div class="card__thumnail">
-                            <img src="assets/images/products/fruits.jpg" alt="">
-                        </div>
-                        <div class="card-info">
-                            <div class="tags">
-                                <span class="tag">Tin tức</span>
-                                <span class="tag">Đặt hàng / Landing Page</span>
-                            </div>
-                            <span class="card__price">1.000.000 VND</span>
-                            <h4 class="card-info__title">Template website bán hoa quả sạch oganic</h4>
-                        </div>
-                        <a href="#" class="card__link"></a>
-                    </div>
-                    <div class="card">
-                        <div class="card__thumnail">
-                            <img src="assets/images/products/fruits.jpg" alt="">
-                        </div>
-                        <div class="card-info">
-                            <div class="tags">
-                                <span class="tag">Tin tức</span>
-                                <span class="tag">Đặt hàng / Landing Page</span>
-                            </div>
-                            <span class="card__price">1.000.000 VND</span>
-                            <h4 class="card-info__title">Template website bán hoa quả sạch oganic</h4>
-                        </div>
-                        <a href="#" class="card__link"></a>
-                    </div>
-                </div>
-                <div class="section-more">
-                    <a href="" class="section-more__link">Xem thêm <i class="fa-solid fa-angles-right"></i></a>
+                    <a href="#" class="home-card__link"></a>
                 </div>
             </div>
+            <div class="home-s-footer">
+                <a href="" class="home-s-footer__link home-s-footer__link--malibu">Xem thêm <i class="fa-solid fa-angles-right"></i></a>
+            </div>
         </section>
-        <section>
-            <div class="container section">
-                <div class="section-header section-header--line-gradient">
-                    <h3 class="section-header__title section-header__title--right ">Source code / Mã nguồn</h3>
+        <section class="home-sourcecode">
+            <div class="home-s-header home-s-header__line home-s-header__line--gradient">
+                <h3 class="home-s-header__title home-s-header__title--bg-gradient-mtc home-s-header__title--right">Source code / Mã nguồn</h3>
+            </div>
+            <div class="home-s-main home-s-main--4col">
+                <div class="home-card home-card__shadow--caribbean">
+                    <div class="home-card__thumnail">
+                        <img src="assets/images/products/fruits.jpg" alt="">
+                    </div>
+                    <div class="home-card-wrap">
+                        <div class="tags">
+                            <span class="tag">Tin tức</span>
+                            <span class="tag">Đặt hàng / Landing Page</span>
+                        </div>
+                        <span class="home-card__price home-card__price--keppel">1.000.000 VND</span>
+                        <h4 class="home-card__title home-card__title--caribbean">Template website bán hoa quả sạch oganic</h4>
+                    </div>
+                    <a href="#" class="home-card__link"></a>
                 </div>
-                <div class="s-main">
-                    <div class="card card--caribbean-shadow">
-                        <div class="card__thumnail">
-                            <img src="assets/images/products/fruits.jpg" alt="">
-                        </div>
-                        <div class="card-info">
-                            <div class="tags">
-                                <span class="tag">Tin tức</span>
-                                <span class="tag">Đặt hàng / Landing Page</span>
-                            </div>
-                            <span class="card__price card__price--keppel">1.000.000 VND</span>
-                            <h4 class="card-info__title card-info__title--caribbean-hover">Template website bán hoa quả sạch oganic</h4>
-                        </div>
-                        <a href="#" class="card__link"></a>
-                    </div>
-                    <div class="card card--caribbean-shadow">
-                        <div class="card__thumnail">
-                            <img src="assets/images/products/fruits.jpg" alt="">
-                        </div>
-                        <div class="card-info">
-                            <div class="tags">
-                                <span class="tag">Tin tức</span>
-                                <span class="tag">Đặt hàng / Landing Page</span>
-                            </div>
-                            <span class="card__price card__price--keppel">1.000.000 VND</span>
-                            <h4 class="card-info__title card-info__title--caribbean-hover">Template website bán hoa quả sạch oganic</h4>
-                        </div>
-                        <a href="#" class="card__link"></a>
-                    </div>
-                    <div class="card card--caribbean-shadow">
-                        <div class="card__thumnail">
-                            <img src="assets/images/products/fruits.jpg" alt="">
-                        </div>
-                        <div class="card-info">
-                            <div class="tags">
-                                <span class="tag">Tin tức</span>
-                                <span class="tag">Đặt hàng / Landing Page</span>
-                            </div>
-                            <span class="card__price card__price--keppel">1.000.000 VND</span>
-                            <h4 class="card-info__title card-info__title--caribbean-hover">Template website bán hoa quả sạch oganic</h4>
-                        </div>
-                        <a href="#" class="card__link"></a>
-                    </div>
-                    <div class="card card--caribbean-shadow">
-                        <div class="card__thumnail">
-                            <img src="assets/images/products/fruits.jpg" alt="">
-                        </div>
-                        <div class="card-info">
-                            <div class="tags">
-                                <span class="tag">Tin tức</span>
-                                <span class="tag">Đặt hàng / Landing Page</span>
-                            </div>
-                            <span class="card__price card__price--keppel">1.000.000 VND</span>
-                            <h4 class="card-info__title card-info__title--caribbean-hover">Template website bán hoa quả sạch oganic</h4>
-                        </div>
-                        <a href="#" class="card__link"></a>
-                    </div>
-                    <div class="card card--caribbean-shadow">
-                        <div class="card__thumnail">
-                            <img src="assets/images/products/fruits.jpg" alt="">
-                        </div>
-                        <div class="card-info">
-                            <div class="tags">
-                                <span class="tag">Tin tức</span>
-                                <span class="tag">Đặt hàng / Landing Page</span>
-                            </div>
-                            <span class="card__price card__price--keppel">1.000.000 VND</span>
-                            <h4 class="card-info__title card-info__title--caribbean-hover">Template website bán hoa quả sạch oganic</h4>
-                        </div>
-                        <a href="#" class="card__link"></a>
-                    </div>
-                    <div class="card card--caribbean-shadow">
-                        <div class="card__thumnail">
-                            <img src="assets/images/products/fruits.jpg" alt="">
-                        </div>
-                        <div class="card-info">
-                            <div class="tags">
-                                <span class="tag">Tin tức</span>
-                                <span class="tag">Đặt hàng / Landing Page</span>
-                            </div>
-                            <span class="card__price card__price--keppel">1.000.000 VND</span>
-                            <h4 class="card-info__title card-info__title--caribbean-hover">Template website bán hoa quả sạch oganic</h4>
-                        </div>
-                        <a href="#" class="card__link"></a>
-                    </div>
-                    <div class="card card--caribbean-shadow">
-                        <div class="card__thumnail">
-                            <img src="assets/images/products/fruits.jpg" alt="">
-                        </div>
-                        <div class="card-info">
-                            <div class="tags">
-                                <span class="tag">Tin tức</span>
-                                <span class="tag">Đặt hàng / Landing Page</span>
-                            </div>
-                            <span class="card__price card__price--keppel">1.000.000 VND</span>
-                            <h4 class="card-info__title card-info__title--caribbean-hover">Template website bán hoa quả sạch oganic</h4>
-                        </div>
-                        <a href="#" class="card__link"></a>
-                    </div>
-                    <div class="card card--caribbean-shadow">
-                        <div class="card__thumnail">
-                            <img src="assets/images/products/fruits.jpg" alt="">
-                        </div>
-                        <div class="card-info">
-                            <div class="tags">
-                                <span class="tag">Tin tức</span>
-                                <span class="tag">Đặt hàng / Landing Page</span>
-                            </div>
-                            <span class="card__price card__price--keppel">1.000.000 VND</span>
-                            <h4 class="card-info__title card-info__title--caribbean-hover">Template website bán hoa quả sạch oganic</h4>
-                        </div>
-                        <a href="#" class="card__link"></a>
-                    </div>
-                </div>
-                <div class="section-more">
-                    <a href="" class="section-more__link section-more__link--caribbean">Xem thêm <i class="fa-solid fa-angles-right"></i></a>
-                </div>
+            </div>
+            <div class="home-s-footer">
+                <a href="" class="home-s-footer__link home-s-footer__link--caribbean">Xem thêm <i class="fa-solid fa-angles-right"></i></a>
             </div>
         </section>
         <section>
