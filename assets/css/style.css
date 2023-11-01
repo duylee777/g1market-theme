@@ -196,10 +196,10 @@
     background-image: linear-gradient(var(--caribbean-green), var(--malibu));
 }
 .posts {
+    position: relative;
+    padding: 1rem;
     display: flex;
     gap: 1rem;
-    padding: 1rem;
-    position: relative;
     box-shadow: -2px 2px 5px var(--malibu);
     border-radius: 0.5rem;
     transition: all 400ms ease-in-out;
